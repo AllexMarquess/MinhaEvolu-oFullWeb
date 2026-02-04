@@ -13,18 +13,71 @@
          input -> entrada de dados
          submit -> enviar 
          button -> botão
+         <form action="processa.html" method="post">
+         <input type="submit" value="Entrar">
       -->
 
       <form>
-           Login: <br>
-           <input type="text" name="Login"> <br>
+
+           Seu E-mail: <br>
+           <input type="text" name="E-mail" placeholder="Digite se email"> <br>
 
            Senha: <br>
-           <input type="text" name="Senha"> <br>
+           <input type="password" name="Senha" placeholder="Digite sua senha"> <br>
+       
+           Comentário: <br>
+           <textarea name="Comentário" placeholder="Digite um Comentário"></textarea>
 
-        
+           <button>
+               <img src="img/home.gif" width="15"> Entrar
+           </button> 
 
+           <br>
       </form>
+   
+       <form>
+
+        <!--
+        label -> legenda para item da interface
+        for -> para
+        -->
+
+        <h2>Label</h2>
+        <label>
+            Nome: 
+           <input type="text" name="nome">
+        </label>
+         
+        <label for="E-mail">E-mail</label>
+        <input type="text" name="E-mail" id="E-mail">
+
+        <br>
+
+        Gênero<br>
+        <input type="radio" name="genero">
+
+        <input type="submit" value="cadastrar">
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </form>
+
+
+
+
+
+
+
 </body>
 </body>
 </html>
