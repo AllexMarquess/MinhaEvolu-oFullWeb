@@ -8,6 +8,7 @@
 <body>
     
      <h1>Formulários</h1>
+    <form action="/HTML5/processa.html" method="GET">
       <!--
          form -> (formulário)
          input -> entrada de dados
@@ -17,7 +18,6 @@
          <input type="submit" value="Entrar">
       -->
 
-      <form>
 
            Seu E-mail: <br>
            <input type="text" name="E-mail" placeholder="Digite se email"> <br>
@@ -33,9 +33,9 @@
            </button> 
 
            <br>
-      </form>
+    </form>
    
-       <form>
+    <form>
 
         <!--
         label -> legenda para item da interface
@@ -64,31 +64,50 @@
         <input type="checkbox" name="estilo" name="rock" id="rock">
         <label for="rock">Rock</label>
         <input type="checkbox" name="estilo" name="sertanejo" id="sertanejo">
-        <label for="sertanejo">Sertanejo</label>
+        <label for="sertanejo">Sertanejo</label><br><br>
 
+
+        <br>
+
+        Estado:
+        <select name="estado">
+            <option value="">Selecione</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="bh">Bahia</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="sp">São Paulo</option>
+        </select>
+
+        <br><br>
+        Upload de arquivo:
+        <input type="file" name="arquivo">
 
         <br><br>
         <input type="submit" value="cadastrar">
 
 
+    </form>
 
+    <form>
+       
+        <H2>fieldset & legend</H2>
+        <!--
+            fildset -> conjunto de campos
+            legend  -> legenda para conjunto de campos
+            
+        -->
+        <fieldset>    
+          <legend>Dados pessoais</legend>
 
-
-
-
-
-
-
-
-
-
-       </form>
-
-
-
-
-
-
+          <label>
+            Nome: 
+           <input type="text" name="nome">
+        </label>
+        
+          <label for="email">E-mail</label>
+          <input type="text" name="email" id="email">  
+        </fieldset>
+    </form>
 
 </body>
 </body>
