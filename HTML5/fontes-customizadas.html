@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes customizadas</title>
+
+    <style>
+           /*para chamra a fonte externa adicionada*/
+           @font-face {
+            font-family: face; /*nome da fonte */
+            src: url(fonts/merry_christmas/MerryChristmasStar.woff2) /*local aonde esta a fonte*/
+                 url(fonts/merry_christmas/MerryChristmasStar.woff)  /*outra opção para o navegador*/
+            ; 
+           }
+           
+           h1{
+            color: burlywood;
+            font-size: 64px;
+            font-family: face, Arial, Helvetica, sans-serif ;
+           }
+
+
+           h2 {
+            font-family: face, Arial, Helvetica, sans-serif ;
+            font-size: 3em;
+            color: blue;
+           }
+    </style>
+
+</head>
+<body>
+
+    <h1>Feliz Natal</h1>
+    <h2>boas festas</h2>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Libero iure esse repellat dolorum harum. Cum rerum non delectus. 
+        Id quos distinctio impedit doloremque vero ipsam veniam, dolore 
+        itaque ipsum ipsa!
+    </p>
+    
+</body>
+</html>
