@@ -8,8 +8,8 @@
     <style>
          
          .caixa {
-            width: 700px; /*largura*/
-            height: 300px; /*altura*/
+            width: 500px; /*largura*/
+            height: 500px; /*altura*/
             border: 3px dotted red; /*borda , tipo e cor*/
             background-color: lightgreen; /*cor de fundo*/
             background-image: url(img/fundo-css-escuro.png); /*imagem de fundo*/
@@ -21,6 +21,19 @@
             */
 
             background-repeat: no-repeat;
+
+            /*fixed -> a imagem de fundo permanece na mesma posiçao na pagina
+            scrool -> a imagem de fundo move-se com a pagina */
+
+            background-attachment: fixed;
+
+            /* quando a imagem não é repetida, você pode posicionar a imagem
+            horizontal: left, center, right
+            vertical: top, center bottom
+            * necessario escolher dois valores
+            senão sera utilizado center como segundo valor*/
+
+            background-position: center top;
          }
 
 
