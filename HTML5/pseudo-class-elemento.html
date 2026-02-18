@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class e pseudo elemento</title>
+
+   <!-- <style>
+  
+    
+     /* Peseudo-classe*/
+     div:hover {
+        background-color: aquamarine;
+        color: blue;
+     }
+     
+     a, a:link {
+        text-decoration: none;
+        color: green;
+        padding: 0.5em 1em;
+     }
+    
+     /*links não visitados*/
+     a:link {
+       color: gray;
+     }
+
+     /*links visitados*/
+     a:visited {
+       color: rgb(214, 2, 2);
+     }
+
+    /*links hover,passo o cursor sobre o link*/
+     a:hover {
+        background-color: green;
+        color: white;
+     }
+    
+     /*links ativos*/
+     a:active {
+        background-color: purple;
+     }
+
+     /*formulario*/
+     input:checked {
+        margin-left: 15px;
+     }
+
+     input:focus {
+        background-color: purple;
+        color: white;
+     }
+
+     input:required {
+        border: 2px solid red;
+     }
+
+     /*Pseudo-elemento*/
+
+     p::first-line {
+        color: red;
+     }
+
+     p::first-letter {
+        font-size: 25px;
+        color: black;
+     }
+
+     p::selection {
+        background-color: aqua;
+     }
+
+     h2::before {
+        content: "{";
+        color: violet;
+     }
+
+     h2::after {
+        content: "}";
+        color: brown;
+     }
+     
+
+     a {
+        color: violet;
+     }
+
+    </style> -->
+
+    <style>
+        a {
+          text-decoration: none;
+          color:blueviolet;
+          padding: 0.5em 1em;
+        }
+
+        a:hover {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        a:active {
+            color: lightblue;
+        }
+    </style>
+
+
+
+</head>
+<body>
+     
+     <a href="">Home</a>|
+     <a href="">Sobre</a>|
+     <a href="">Empresa</a>|
+     <a href="">Produtos</a>|
+     <a href="">Contato</a>
+    <br> <br> <br> <br> <br>
+
+
+
+    <div>
+        conteúdo da DIV
+    </div>
+
+    <h2>Conteúdo do h2</h2>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Fuga error similique ipsum assumenda voluptatum porro ab omnis 
+      hic placeat cupiditate velit, vero dolorum, esse at natus impedit 
+      nihil nostrum earum.
+    </p>
+
+    <a href="#">Google</a> |
+    <a href="#">Facebook</a> |
+    <a href="#">Instagram</a> 
+
+    <h2>Formulário</h2>
+    <input type="checkbox"> Aceito <br>
+    <input type="radio" name="opção">Sim <br>
+    <input type="radio" name="opção">Não <br>
+    <input type="text" required placeholder="Digite se nome">
+</body>
+</html>
