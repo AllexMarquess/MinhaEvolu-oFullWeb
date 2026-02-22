@@ -1,0 +1,26 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.navbar {
+    background-color: antiquewhite;
+    width: 100%;
+   
+}
+
+.menu {
+    align-items: center;
+    color: rgb(59, 58, 58);
+    text-align: center;
+    padding: 0.6rem;
+    text-shadow: hotpink;
+    margin: 1rem;
+}
+
+img {
+    width: 200px;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
