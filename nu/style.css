@@ -1,32 +1,177 @@
 
-.div {
-    background-image: url(img/Nu_Paolla-1-1.png);
-    width: 200px;
-    height: 200px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-    margin-right: 45px;
+ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
 }
 
-#topo-navegação {
-   align-items: center;
-   text-align: center;
-   
+ul.menu> li {
+    display: inline-block;
+    position: relative;
 }
 
-a {
-    text-decoration: none;
-    margin-right: 15px;
-    text-align: center;
-    align-items: center;
-}
-
-a:hover {
-    font-size: 37px;
-    background-color: black;
+ul.menu> li a {
+    display: block;
+    padding: 10px 20px;
     color: white;
-    border: transparent;
-    border-radius: 12px;
-    transition: 1.5s;
+    text-decoration: none;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+}
+
+ul.menu > li > a:hover {
+    background-color: #555;
+}
+
+ul.menu ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 8px  16px  rgba(0, 0, 0, 0.3);
+
+}
+
+ul.menu ul.submenu li a {
+            padding: 10px;
+            background-color: #444;
+            color: white;
+        }
+
+        /* Efeito de hover no submenu */
+        ul.menu ul.submenu li a:hover {
+            background-color: #666;
+        }
+
+        /* Exibe o submenu quando o item do menu é hoverado */
+        ul.menu > li:hover > ul.submenu {
+            display: block;
+        }
+
+
+
+
+        /*  SEGUNDA PARTE */
+
+
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER PRINCIPAL */
+.top-header{
+    background:#ffffff;
+    padding:15px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #ddd;
+}
+
+/* LOGO */
+.logo{
+    font-size:26px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#e30613; /* vermelho */
+}
+
+.logo strong{
+    color:#0050ff; /* azul */
+}
+
+/* BARRA DE BUSCA */
+.search-box{
+    flex:1;
+    margin:0 40px;
+    position:relative;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px 45px 12px 20px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    outline:none;
+    font-size:14px;
+}
+
+.search-box button{
+    position:absolute;
+    right:5px;
+    top:5px;
+    bottom:5px;
+    border:none;
+    background:#0050ff;
+    color:#fff;
+    padding:0 15px;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+/* AÇÕES DIREITA */
+.actions{
+    display:flex;
+    gap:25px;
+    font-size:14px;
+}
+
+.actions a{
+    text-decoration:none;
+    color:#0050ff;
+    font-weight:500;
+}
+
+/* MENU CATEGORIAS */
+.navbar{
+    background:#f7f7f7;
+    padding:12px 40px;
+}
+
+.navbar ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.navbar ul li{
+    position:relative;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:#0050ff;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* BOTÃO CUPOM */
+.cupom{
+    background:#e30613;
+    color:#fff !important;
+    padding:5px 12px;
+    border-radius:15px;
+    font-size:12px;
+}
+
+/* HOVER */
+.navbar ul li a:hover{
+    text-decoration:underline;
 }
