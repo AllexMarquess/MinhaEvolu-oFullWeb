@@ -4,3 +4,29 @@
     width: 200px;
     height: 200px;
 }
+
+img {
+    margin-right: 45px;
+}
+
+#topo-navegação {
+   align-items: center;
+   text-align: center;
+   
+}
+
+a {
+    text-decoration: none;
+    margin-right: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+a:hover {
+    font-size: 37px;
+    background-color: black;
+    color: white;
+    border: transparent;
+    border-radius: 12px;
+    transition: 1.5s;
+}
